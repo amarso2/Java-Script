@@ -1,0 +1,50 @@
+<HTML>
+  <HEAD>
+   <TITLE>
+      Greatest returntype with argument
+  
+  </TITLE>
+
+  </HEAD>
+   <BODY>
+		<Script Language="JavaScript">
+  function greatest(x,y,z)
+     {   
+		      var gr;
+              if(x>y)
+                 {
+                  if(x>z)
+                    {
+                      gr=x;
+                     }
+                    else
+                      {
+                       gr=z;
+                       }
+                   }
+                else 
+                   {
+                    if(y>x)
+                        {
+                        if(y>z)
+                          {
+                           gr=y;
+                           }
+                          else 
+                            {
+							 gr=z;
+							 }
+						  }	 
+                    }
+		     return(gr);
+	  }
+            var x=parseInt(prompt("Enter 1st number="));
+	       var y=parseInt(prompt("Enter 2nd number="));
+		   var z=parseInt(prompt("Enter 3rd number="));
+		  var s=greatest(x,y,z);
+           document.write("Smallest="+s);		 
+		   
+		</Script> 
+		 
+   </BODY>
+ </HTML>  

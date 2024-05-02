@@ -1,0 +1,51 @@
+<HTML>
+  <HEAD>
+   <TITLE>
+      smallest 
+  
+  </TITLE>
+
+  </HEAD>
+   <BODY>
+		<Script Language="JavaScript">
+  function smallest()
+     {   
+           var x=parseInt(prompt("Enter principle="));
+	       var y=parseInt(prompt("Enter rate="));
+		   var z=parseInt(prompt("Enter time="));
+		      var sm;
+              if(x<y)
+                 {
+                  if(x<z)
+                    {
+                      sm=x;
+                     }
+                    else
+                      {
+                       sm=z;
+                       }
+                   }
+                else 
+                   {
+                    if(y<x)
+                        {
+                        if(y<z)
+                          {
+                           sm=y;
+                           }
+                          else 
+                            {
+							 sm=z;
+							 }
+						  }	 
+                    }
+		     return(sm);
+	  }
+
+		  var s=smallest();
+           document.write("Smallest="+s);		 
+		   
+		</Script> 
+		 
+   </BODY>
+ </HTML>  

@@ -1,0 +1,39 @@
+<HTML>
+  <HEAD>
+   <TITLE>
+      Polindrome
+  
+  </TITLE>
+
+  </HEAD>
+   <BODY>
+		<Script Language="JavaScript">
+  function polindrom()
+     {   
+	       var n=parseInt(prompt("Enter a number="));
+		     var rev=0;
+			 var rem;
+			   var m=n;
+			   while(n>0)
+			    {
+				 rem=n%10;
+				  rev=rev*10+rem;
+				  n=parseInt(n/10);
+				 }
+		     if(rev==m)
+			  {
+			   document.write("Polindrome="+m);
+			   }
+			   else
+			    {
+				 document.write("not Polindrome="+m);
+				}
+	  }
+            
+		  polindrom();
+           		 
+		   
+		</Script> 
+		 
+   </BODY>
+ </HTML>  

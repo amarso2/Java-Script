@@ -1,0 +1,40 @@
+<HTML>
+  <HEAD>
+   <TITLE>
+      fibnecii series
+  
+  </TITLE>
+  </HEAD>
+   <BODY>
+		<Script Language="JavaScript">
+       var n=parseInt(prompt("Enter a number"))
+	         var present=0;
+	         var x=2;		 
+	      while(x<=n/2)
+		   {
+		     if(n%x==0)
+			   {
+			    present=1;
+				
+				}
+			x++;
+           }
+		  if(n>1)
+		  {
+           if(present==1)
+             {
+             document.write(n+"not  prime");
+             }       
+             else
+               {
+                document.write(n+" prime");
+                }				
+	        }
+			else 
+			  {
+			   document.write(n+" is null");
+			   }
+		</Script> 
+		 
+   </BODY>
+ </HTML>  
